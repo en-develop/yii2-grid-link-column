@@ -17,7 +17,7 @@ use yii\helpers\Url;
  *       'params' => [
  *           'urlParam' => 'modelAttribute'
  *       ],
- *       'urlOptions' => []
+ *       'linkOptions' => []
  *   ]
  *  ...
  *
@@ -41,7 +41,7 @@ class LinkColumn extends DataColumn
      * Options for link settings
      * @var
      */
-    public $urlOptions = [];
+    public $linkOptions = [];
 
     /**
      * @var string
@@ -57,7 +57,7 @@ class LinkColumn extends DataColumn
         return Html::a(
             $model->{$this->attribute},
             $this->generateUrl($model),
-            $this->urlOptions
+            $this->linkOptions
         );
     }
 
