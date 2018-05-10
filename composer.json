@@ -1,0 +1,21 @@
+{
+    "name": "en-develop/yii2-grid-link-column",
+    "description": "Column for creating links for the grid",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Eugene Nikitin",
+            "email": "evgeny.nikitin1991@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "edevelop\\grid\\": ""
+        }
+    }
+}
