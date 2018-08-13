@@ -11,7 +11,7 @@ use yii\helpers\Url;
  * To add an UrlColumn to the gridview, add it to the [[GridView::columns|columns]] configuration as follows:
  *   ...
  *   [
- *       'class' => 'edevelop\grid\LinkColumn',
+ *       'class' => 'en-develop\grid\LinkColumn',
  *       'attribute' => 'yourAttribute',
  *       'url' => 'your url',
  *       'params' => [
@@ -69,8 +69,6 @@ class LinkColumn extends DataColumn
      */
     protected function generateUrl($model)
     {
-        $url[] = $this->url;
-
         if (null !== $this->params && is_array($this->params)) {
             foreach ($this->params as $key => $param) {
                 $url[$key] = $model->$param;

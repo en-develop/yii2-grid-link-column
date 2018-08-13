@@ -32,9 +32,9 @@ Once the extension is installed, simply use it in your code by  :
      yii\grid\GridView::widget([
          //...
          [
-             'class' => 'edevelop\grid\LinkColumn',
+             'class' => 'en-develop\grid\LinkColumn',
              'attribute' => 'yourAttribute',
-             'url' => 'your url',
+             'url' => 'your url', // [] or
              'params' => [
                 'urlParam' => 'modelAttribute'
              ],
