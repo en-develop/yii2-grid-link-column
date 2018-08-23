@@ -69,6 +69,7 @@ class LinkColumn extends DataColumn
      */
     protected function generateUrl($model)
     {
+        $url = [$this->url];
         if (null !== $this->params && is_array($this->params)) {
             foreach ($this->params as $key => $param) {
                 $url[$key] = $model->$param;
